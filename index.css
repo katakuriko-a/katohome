@@ -219,13 +219,13 @@ footer > .container {
   transform: translate(-50% ,-50%);
 }
 .list_sns .youtube a:before {
-  background: url(katotube.svg);
+  background: url(../katohome/SVG/katotube.svg);
 }
 .list_sns .twitter a:before {
-  background: url(twitter.svg);
+  background: url(../katohome/SVG/twitter.svg);
  }
 .list_sns .twitch a:before {
-    background: url(twitter.svg);
+  background: url(../katohome/SVG/twitter.svg);
  }
 .copyright {
   font: 300 14px/1em 'futuraPT' 'noto sans japanese',sans-serif ;
