@@ -77,7 +77,7 @@ left: 15px;
 transform: translateY(-50%);
 }
 [class*="btn_ico"][class*="mail"]:before {
-background: url(../katohome/SVG/icon-mail.svg);
+background: url(icon-mail.svg);
 }
 [class*="btn_ico"][class*="youtube"]:before {
   background: url(YouTube.svg);
