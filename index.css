@@ -1,0 +1,233 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.container { 
+max-width: 1160px;
+padding: 0px 40px;
+margin: 0 auto;
+}
+
+
+/* ヘッダー */
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header > .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 60px;
+}
+
+/* ロゴ */
+.area_logo_header .logo {
+  display: block;
+}
+.area_logo_header img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+/* ヘッダーナビ */
+.nav_header {
+  margin: 0 0 0 auto;
+}
+.list_nav_header {
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+.list_nav_header > li {
+  padding: 0 15px;
+}
+.list_nav_header a {
+color: #ffffff;
+font: 400 18px/1em 'futuraPT', 'noto sans japanese',sans-serif;
+}
+[class*="btn_ico"] {
+  color: #fff;
+font: 400 18px/1em 'futuraPT', 'noto sans japanese',sans-serif;
+display: flex;
+align-items: center;
+height: 36px;
+padding: 0 30px 0 60px;
+background:#FF7BAA;
+box-shadow:0px 7px 6px -4px rgba(16,61,72,.2) ;
+position: relative;
+}
+[class*="btn_ico"]:before {
+content:"" ;
+display: block;
+width: 30px;
+height: 30px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+position: absolute;
+top: 50%;
+left: 15px;
+transform: translateY(-50%);
+}
+[class*="btn_ico"][class*="mail"]:before {
+background: url(../katohome/SVG/icon-mail.svg);
+}
+[class*="btn_ico"][class*="youtube"]:before {
+  background: url(YouTube.svg);
+}
+
+
+
+/* トップビュー */
+.area_top_view {
+  background: url(smilekato.jpg) no-repeat top center;
+  background-size: cover;
+}
+.area_top_view > .container {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.area_top_view img {
+  height: 60px;
+  vertical-align: bottom;
+}
+.area_top_view .ttl {
+  color: #fff;
+  font: 400 27/1em 'futuraPT', 'noto sans japanese',sans-serif ;
+  letter-spacing: 01em;
+  font-size: large;
+  margin: 600px 0 0 ;
+  padding: 0 0 0 4px;
+  position: relative;
+}
+.area_top_view .ttl:before{
+  content:"";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(icon-youtube.PNG) no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+}
+
+/* エリアホーム */
+[class*="area_home"] {
+  padding: 80px 0 120px;
+}
+
+/* ヘッド */
+.head_home{
+margin: 0 0 100px;
+  display: flex;
+  justify-content: center;
+}
+.head_home .ttl {
+  font: 500 56px/1em 'futuraPT', 'noto sans japanese',sans-serif ;
+  padding: 0 0 12px;
+  position: relative;
+}
+.head_home .ttl:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #FF7BAA;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* 2分割レイアウト */
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -40px;  
+}
+.layout_2_div > div {
+  width: 50%;
+  padding: 0 40px;
+}
+
+/* テキスト＿ホーム */
+.text_home .ttl {
+font: 500 32px/1em 'futuraPT', 'noto sans japanese',sans-serif;
+margin: 0 0 20px;
+}
+.text_home .descriptional {
+  font: 300 20px/1.8em 'futuraPT' 'noto sans japanese',sans-serif;
+}
+.text_home .descriptional2 {
+  font: 300 20px/1.8em 'futuraPT' 'noto sans japanese',sans-serif;
+  margin: auto;
+}
+/* hirocode.とは */
+.area_home_about img {
+  transform:scale(1.1);
+  transform-origin: center center;
+}
+
+/* フッター */
+footer > .container {
+  padding: 0 0 80px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* SNSリスト */
+.list_sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px;
+}
+.list_sns > li {
+  padding: 0 10px;
+}
+.list_sns a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #FF7BAA;
+  border-radius: 50%;
+  position: relative;
+}
+.list_sns a:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+}
+.list_sns .youtube a:before {
+  background: url(../katohome/SVG/katotube.svg);
+}
+.list_sns .twitter a:before {
+  background: url(../katohome/SVG/twitter.svg);
+ }
+.list_sns .twitch a:before {
+    background: url(../katohome/SVG/twitch.svg);
+ }
+.copyright {
+  font: 300 14px/1em 'futuraPT' 'noto sans japanese',sans-serif ;
+  margin: 30px 0 0;
+}
